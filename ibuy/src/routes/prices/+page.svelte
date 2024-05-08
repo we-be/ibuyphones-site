@@ -58,3 +58,14 @@
         </tbody>
     </table>
 </div>
+
+
+<div class="p-6">
+    <div class="card border border-primary-500/30">
+        <div class="h3 p-2">Pricing questions? <u>CALL ED!</u></div>
+        <div class="text-primary-500 h2 p-4">
+            <b>1-888-888-8888</b>
+        </div>
+    </div>
+</div>
+
