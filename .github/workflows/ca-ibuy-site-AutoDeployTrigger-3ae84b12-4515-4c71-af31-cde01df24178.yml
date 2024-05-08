@@ -40,7 +40,7 @@ jobs:
           registryPassword: ${{ secrets.CAIBUYSITE_REGISTRY_PASSWORD }}
           containerAppName: ca-ibuy-site
           resourceGroup: web
-          imageToBuild: hunterjsb/ca-ibuy-site:${{ github.sha }}
+          imageToBuild: hunterjsb/ibuyphones-site:latest
           _buildArgumentsKey_: |
             _buildArgumentsValues_
 
