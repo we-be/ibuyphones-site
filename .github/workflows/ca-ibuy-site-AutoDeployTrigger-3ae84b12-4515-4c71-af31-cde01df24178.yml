@@ -1,0 +1,47 @@
+name: Trigger auto deployment for ca-ibuy-site
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ main ]
+    paths:
+    - '**'
+    - '.github/workflows/ca-ibuy-site-AutoDeployTrigger-3ae84b12-4515-4c71-af31-cde01df24178.yml'
+
+  # Allow manual trigger 
+  workflow_dispatch:      
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions: 
+      id-token: write #This is required for requesting the OIDC JWT Token
+      contents: read #Required when GH token is used to authenticate with private repo
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.CAIBUYSITE_AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.CAIBUYSITE_AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.CAIBUYSITE_AZURE_SUBSCRIPTION_ID }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v2
+        with:
+          appSourcePath: ${{ github.workspace }} 
+          registryUrl: docker.io
+          registryUsername: ${{ secrets.CAIBUYSITE_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.CAIBUYSITE_REGISTRY_PASSWORD }}
+          containerAppName: ca-ibuy-site
+          resourceGroup: web
+          imageToBuild: hunterjsb/ca-ibuy-site:${{ github.sha }}
+          _buildArgumentsKey_: |
+            _buildArgumentsValues_
+
+
