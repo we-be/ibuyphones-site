@@ -33,8 +33,9 @@
     ];
 </script>
 
+<h1 class="h1 p-4">Device Prices</h1>
 <!-- Responsive Container (recommended) -->
-<div class="table-container">
+<div class="table-container p-4">
     <!-- Native Table Element -->
     <table class="table table-hover">
         <thead>
@@ -48,7 +49,7 @@
         <tbody>
             {#each arr as row, i}
                 <tr>
-                    <td>{row.name}</td>
+                    <td><b>{row.name}</b></td>
                     <td>{row.priceUsed}</td>
                     <td>{row.priceNew}</td>
                     <td>{row.priceCracked}</td>
