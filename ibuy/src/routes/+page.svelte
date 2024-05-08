@@ -61,7 +61,7 @@
         <div class="flex justify-center space-x-2">
             <a
                 class="btn variant-filled float-button"
-                href="/"
+                href="/prices"
                 target="_blank"
                 rel="noreferrer"
             >
