@@ -9,14 +9,12 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">iBuy Phones</strong>
+				<a href="/"><strong class="text-xl uppercase">iBuy Phones</strong></a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="/"
-					target="_blank"
-					rel="noreferrer"
+					href="/prices"
 				>
 					Prices
 				</a>
