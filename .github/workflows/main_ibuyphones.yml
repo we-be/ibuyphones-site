@@ -68,5 +68,5 @@ jobs:
         with:
           app-name: 'ibuyphones'
           slot-name: 'Production'
-          package: .
+          package: ./ibuy
           
