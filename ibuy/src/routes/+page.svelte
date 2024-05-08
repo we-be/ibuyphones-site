@@ -60,8 +60,8 @@
         <!-- / -->
         <div class="flex justify-center space-x-2">
             <a
-                class="btn variant-filled"
-                href="https://skeleton.dev/"
+                class="btn variant-filled float-button"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
             >
@@ -78,47 +78,84 @@
 
 <style lang="postcss">
     figure {
-        @apply flex relative flex-col;
+        display: flex;
+        position: relative;
+        flex-direction: column;
     }
     .iphone-container {
-        @apply flex justify-center items-center w-64 h-64 md:w-80 md:h-80;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16rem;
+        height: 16rem;
         perspective: 1000px;
     }
+    @media (min-width: 768px) {
+        .iphone-container {
+            width: 20rem;
+            height: 20rem;
+        }
+    }
     .iphone-image {
-        @apply max-w-full max-h-full absolute;
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
         opacity: 0;
         transform: rotateY(var(--rotation)) translateZ(200px);
         transition:
             opacity 0.5s,
-            transform 0.75s;
+            transform 0.5s;
     }
     .iphone-image.active {
         opacity: 1;
         transform: rotateY(var(--rotation)) translateZ(0);
     }
     .img-bg {
-        @apply absolute z-[-1] rounded-full blur-[50px] transition-all;
-        animation:
-            pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite,
-            glow 5s linear infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 50%;
+        filter: blur(50px);
+        opacity: 0.5;
+        animation: glow 5s linear infinite;
     }
     @keyframes glow {
         0% {
-            @apply bg-primary-400/50;
+            background-color: rgba(var(--color-primary-400) / 0.5);
         }
         33% {
-            @apply bg-secondary-400/50;
+            background-color: rgba(var(--color-secondary-400) / 0.5);
         }
         66% {
-            @apply bg-tertiary-400/50;
+            background-color: rgba(var(--color-tertiary-400) / 0.5);
         }
         100% {
-            @apply bg-primary-400/50;
+            background-color: rgba(var(--color-primary-400) / 0.5);
         }
     }
     @keyframes pulse {
         50% {
             transform: scale(1.5);
+        }
+    }
+
+    .float-button {
+        animation: float-up 5s ease-in-out infinite;
+    }
+
+    @keyframes float-up {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-4px);
+        }
+        100% {
+            transform: translateY(0);
         }
     }
 </style>

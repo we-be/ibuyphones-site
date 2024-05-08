@@ -14,7 +14,7 @@
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
+					href="/"
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -22,7 +22,7 @@
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href="https://github.com/we-be/ibuyphones-site"
 					target="_blank"
 					rel="noreferrer"
 				>
