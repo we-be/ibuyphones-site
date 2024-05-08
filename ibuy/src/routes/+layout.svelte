@@ -9,7 +9,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase">iBuy Phones</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
@@ -18,15 +18,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					Discord
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
+					Prices
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
@@ -34,7 +26,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					GitHub
+					Contact
 				</a>
 			</svelte:fragment>
 		</AppBar>
