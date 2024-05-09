@@ -88,7 +88,6 @@
 <style lang="postcss">
     .float-button {
         animation: float-up 5s ease-in-out infinite;
-        background-color: black;
     }
 
     @keyframes float-up {
