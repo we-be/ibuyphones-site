@@ -26,6 +26,16 @@
             priceNew: 122,
         },
     ];
+
+    function callEd() {
+        window.location.href = 'tel:404-276-3869';
+    }
+
+    function copyNumber() {
+        navigator.clipboard.writeText('404-276-3869').then(() => {
+            alert('Number copied to clipboard!');
+        });
+    }
 </script>
 
 <h1 class="h1 p-4">Device Prices</h1>
@@ -64,11 +74,32 @@
 </div>
 
 
-<div class="p-6">
-    <div class="card border border-primary-500/30">
+<div class="flex justify-center p-2 space-x-4">
+    <button class="btn variant-filled float-button" on:click={callEd} on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') callEd(); }} type="button">
         <div class="h3 p-2">Pricing questions? <u>CALL ED!</u></div>
-        <div class="text-primary-500 h2 p-4">
-            <b>404-276-3869</b>
-        </div>
-    </div>
+        <b>404-276-3869</b>
+    </button>
+    <button class="btn variant-filled" on:click={copyNumber} on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') copyNumber(); }} type="button">
+        Copy Number
+    </button>
 </div>
+
+
+<style lang="postcss">
+    .float-button {
+        animation: float-up 5s ease-in-out infinite;
+        background-color: black;
+    }
+
+    @keyframes float-up {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-4px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+</style>
