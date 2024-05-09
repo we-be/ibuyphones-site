@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import PhoneIcon from "$lib/PhoneIcon.svelte"
 
     let currentImageIndex = 0;
     const images = [
@@ -67,6 +68,9 @@
             >
                 See Prices
             </a>
+            <!-- <button type="button" class="btn-icon variant-filled">
+                <PhoneIcon size="20px" color="black" />
+            </button> -->
         </div>
         <div class="space-y-2">
             <p>or contact us:</p>
