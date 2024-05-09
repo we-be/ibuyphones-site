@@ -1,9 +1,9 @@
 <script lang="ts">
     const arr = [
         {
-            priceUsed: 122,
+            priceUsed: 80,
             name: "iphone 11",
-            priceNew: 100,
+            priceNew: 80,
         },
         {
             priceUsed: 100,
@@ -11,17 +11,17 @@
             priceNew: 120,
         },
         {
-            priceUsed: 102,
+            priceUsed: 130,
             name: "iphone 13",
             priceNew: 200,
         },
         {
-            priceUsed: 100,
+            priceUsed: 180,
             name: "iphone 14",
             priceNew: 302,
         },
         {
-            priceUsed: 120,
+            priceUsed: 200,
             name: "iphone 15",
             priceNew: 122,
         },
