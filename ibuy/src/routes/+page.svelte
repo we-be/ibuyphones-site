@@ -70,7 +70,7 @@
         </div>
         <div class="space-y-2">
             <p>or contact us:</p>
-            <p><code class="code">+1-888-888-8888</code></p>
+            <p><code class="code">404-276-3869</code></p>
             <p><code class="code">edfaria95@gmail.com</code></p>
         </div>
     </div>
