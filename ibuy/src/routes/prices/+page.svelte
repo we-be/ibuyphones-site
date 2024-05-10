@@ -2,7 +2,7 @@
     import ClipboardIcon from "$lib/ClipboardIcon.svelte";
     const arr = [
         {
-            priceUser: 50,
+            priceUsed: 50,
             name: "iPhone 11",
             priceNew: 100,
         },
