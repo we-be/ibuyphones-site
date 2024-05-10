@@ -1,4 +1,5 @@
 <script lang="ts">
+    import ClipboardIcon from "$lib/ClipboardIcon.svelte";
     const arr = [
         {
             priceUsed: 80,
@@ -79,8 +80,8 @@
         <div class="h3 p-2">Pricing questions? <u>CALL ED!</u></div>
         <b>404-276-3869</b>
     </button>
-    <button class="btn variant-filled" on:click={copyNumber} on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') copyNumber(); }} type="button">
-        Copy Number
+    <button type="button" class="btn-icon variant-filled" on:click={copyNumber} on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') copyNumber(); }}>
+        <ClipboardIcon size="20px" />
     </button>
 </div>
 
