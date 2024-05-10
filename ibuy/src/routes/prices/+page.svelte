@@ -2,28 +2,28 @@
     import ClipboardIcon from "$lib/ClipboardIcon.svelte";
     const arr = [
         {
-            priceUsed: 80,
-            name: "iphone 11",
+            priceUser: 80,
+            name: "iPhone 11",
             priceNew: 80,
         },
         {
             priceUsed: 100,
-            name: "iphone 12",
+            name: "iPhone 12",
             priceNew: 120,
         },
         {
             priceUsed: 130,
-            name: "iphone 13",
+            name: "iPhone 13",
             priceNew: 200,
         },
         {
             priceUsed: 180,
-            name: "iphone 14",
+            name: "iPhone 14",
             priceNew: 302,
         },
         {
             priceUsed: 200,
-            name: "iphone 15",
+            name: "iPhone 15",
             priceNew: 122,
         },
     ];
@@ -47,8 +47,8 @@
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Used</th>
-                <th>New</th>
+                <th>Price Minimum</th>
+                <th>Price Maximum</th>
             </tr>
         </thead>
         <tbody>
