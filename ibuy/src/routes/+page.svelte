@@ -125,26 +125,6 @@
         border-radius: 50%;
         filter: blur(50px);
         opacity: 0.5;
-        animation: glow 5s linear infinite;
-    }
-    @keyframes glow {
-        0% {
-            background-color: rgba(var(--color-primary-400) / 0.5);
-        }
-        33% {
-            background-color: rgba(var(--color-secondary-400) / 0.5);
-        }
-        66% {
-            background-color: rgba(var(--color-tertiary-400) / 0.5);
-        }
-        100% {
-            background-color: rgba(var(--color-primary-400) / 0.5);
-        }
-    }
-    @keyframes pulse {
-        50% {
-            transform: scale(1.5);
-        }
     }
 
     .float-button {
