@@ -17,7 +17,7 @@
             priceNew: 225,
         },
         {
-            (priceUsed: 140,
+            priceUsed: 140,
             name: "iPhone 14",
             priceNew: 300,
         },
