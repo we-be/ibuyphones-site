@@ -16,7 +16,7 @@
 					class="btn btn-sm variant-ghost-surface"
 					href="/prices"
 				>
-					Prices
+					<iframe src="https://docs.google.com/spreadsheets/d/1tJQ-WdQZc91cCw0ExvPe6-lOkRuHVRbIsj4D2nNwuTo/pubhtml?gid=1216102336&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
