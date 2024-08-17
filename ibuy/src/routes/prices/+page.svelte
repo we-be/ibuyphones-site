@@ -52,8 +52,6 @@
         allowfullscreen
     </iframe>
 </div>
-<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-fc6d0528-ff42-4d35-8124-aea382ad0f94" data-elfsight-app-lazy></div>
 
 <div class="flex justify-center p-2 space-x-4">
     <button class="btn variant-filled float-button" on:click={callEd} on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') callEd(); }} type="button">
