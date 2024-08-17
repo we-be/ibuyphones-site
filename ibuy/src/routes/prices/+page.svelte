@@ -43,7 +43,15 @@
 <!-- Responsive Container (recommended) -->
 <div class="table-container p-4">
     <!-- Native Table Element -->
-    <iframe src="https://docs.google.com/spreadsheets/d/1tJQ-WdQZc91cCw0ExvPe6-lOkRuHVRbIsj4D2nNwuTo/pubhtml?gid=1216102336&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    <iframe
+        width=500
+        height=1000
+        src="https://docs.google.com/spreadsheets/d/1tJQ-WdQZc91cCw0ExvPe6-lOkRuHVRbIsj4D2nNwuTo/pubhtml?gid=1216102336&amp;single=true&amp;widget=true&amp;headers=false">
+        style="border:none;"
+        scrolling="auto"
+        allowfullscreen
+        style="border: 2px solid #000;"
+    </iframe>
 </div>
 
 
