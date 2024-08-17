@@ -50,8 +50,6 @@
         style="border:none;"
         scrolling="auto"
         allowfullscreen
-        style="border: 2px solid #000;"
-
     </iframe>
 </div>
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
