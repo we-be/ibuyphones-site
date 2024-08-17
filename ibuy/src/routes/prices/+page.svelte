@@ -1,32 +1,4 @@
-<script lang="ts">
-    import ClipboardIcon from "$lib/ClipboardIcon.svelte";
-    const arr = [
-        {
-            priceUsed: 50,
-            name: "iPhone 11",
-            priceNew: 100,
-        },
-        {
-            priceUsed: 100,
-            name: "iPhone 12",
-            priceNew: 150,
-        },
-        {
-            priceUsed: 130,
-            name: "iPhone 13",
-            priceNew: 225,
-        },
-        {
-            priceUsed: 140,
-            name: "iPhone 14",
-            priceNew: 300,
-        },
-        {
-            priceUsed: 200,
-            name: "iPhone 15",
-            priceNew: 400,
-        },
-    ];
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer>
 
     function callEd() {
         window.location.href = 'tel:404-276-3869';
@@ -38,6 +10,8 @@
         });
     }
 </script>
+
+<div class="elfsight-app-fc6d0528-ff42-4d35-8124-aea382ad0f94" data-elfsight-app-lazy></div>
 
 <h1 class="h1 p-4">Device Prices</h1>
 <!-- Responsive Container (recommended) -->
