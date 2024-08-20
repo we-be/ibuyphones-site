@@ -37,8 +37,18 @@
             alert('Number copied to clipboard!');
         });
     }
-</script>
 
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11329944055">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11329944055');
+</script>
 <h1 class="h1 p-4">Device Prices</h1>
 <!-- Responsive Container (recommended) -->
 <div class="table-container p-4">
