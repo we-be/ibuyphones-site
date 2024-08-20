@@ -33,7 +33,16 @@
         };
     });
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11329944055">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-11329944055');
+</script>
 <div class="container h-full mx-auto flex justify-center items-center">
     <div class="space-y-10 text-center flex flex-col items-center">
         <h2 class="h2">
