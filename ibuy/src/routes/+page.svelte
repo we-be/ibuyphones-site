@@ -58,6 +58,11 @@
                 {/each}
             </div>
         </figure>
+			h2 class="h2">
+            <span class="gradient-heading"
+                >Meet and sell at the new location <i>1135 Chantilly Crescent NE Atlanta Ga 30324</i>.</span
+            >
+        </h2>
         <!-- / -->
         <div class="flex justify-center space-x-2">
             <a
