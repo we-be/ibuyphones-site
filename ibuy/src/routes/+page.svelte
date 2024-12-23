@@ -58,11 +58,7 @@
                 {/each}
             </div>
         </figure>
-			h2 class="h2">
-            <span class="gradient-heading"
-                >Meet and sell at the new location <i>1135 Chantilly Crescent NE Atlanta Ga 30324</i>.</span
-            >
-        </h2>
+			
         <!-- / -->
         <div class="flex justify-center space-x-2">
             <a
@@ -80,6 +76,7 @@
         <div class="space-y-2">
             <p>or contact us:</p>
             <p><code class="code">404-276-3869</code></p>
+			<p><code class="code">1135 Chantilly Crescent Ne Atlanta Ga 30324</code></p>
             <p><code class="code">edfaria95@gmail.com</code></p>
         </div>
     </div>
