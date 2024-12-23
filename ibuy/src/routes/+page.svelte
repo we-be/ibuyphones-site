@@ -58,7 +58,6 @@
                 {/each}
             </div>
         </figure>
-			
         <!-- / -->
         <div class="flex justify-center space-x-2">
             <a
