@@ -73,9 +73,8 @@
             </button> -->
         </div>
         <div class="space-y-2">
-            <p>or contact us:</p>
+            <p>1135 Chantilly Crescent Ne Atlanta Ga 30324</p>
             <p><code class="code">404-276-3869</code></p>
-			<p><code class="code">1135 Chantilly Crescent Ne Atlanta Ga 30324</code></p>
             <p><code class="code">edfaria95@gmail.com</code></p>
         </div>
     </div>
